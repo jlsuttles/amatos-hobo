@@ -1,0 +1,21 @@
+development:
+  adapter: mysql
+  database: amatos_dev_2
+  username: root
+  password: password
+  socket: /tmp/mysql.sock  
+
+test: 
+  adapter: mysql
+  database: amatos_test
+  username: root
+  password: password
+  socket: /tmp/mysql.sock
+
+production: 
+  adapter: mysql
+  database: amatos_pro
+  username: root
+  password: password
+  socket: /tmp/mysql.sock
+
