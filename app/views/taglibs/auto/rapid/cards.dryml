@@ -3,31 +3,40 @@
 <def tag="card" for="AboutUs">
   <card class="about-us" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
     </header:>
+    <body: param>
+      <view:description param="description"/>
+    </body:>
   </card>
 </def>
 
 <def tag="card" for="Event">
   <card class="event" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
     </header:>
+    <body: param>
+      <view:description param="description"/>
+    </body:>
   </card>
 </def>
 
 <def tag="card" for="Item">
   <card class="item" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
     </header:>
+    <body: param>
+      <view:description param="description"/>
+    </body:>
   </card>
 </def>
 
 <def tag="card" for="Location">
   <card class="location" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
     </header:>
   </card>
 </def>
@@ -35,12 +44,10 @@
 <def tag="card" for="Menu">
   <card class="menu" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
     </header:>
     <body: param>
-      <ht key="items.collection.count" count="&this.items.size">
-         <count:items param/>
-      </ht>
+      <view:description param="description"/>
     </body:>
   </card>
 </def>
@@ -48,15 +55,18 @@
 <def tag="card" for="News">
   <card class="news" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
     </header:>
+    <body: param>
+      <view:body param="description"/>
+    </body:>
   </card>
 </def>
 
 <def tag="card" for="StoreHours">
   <card class="store-hours" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
     </header:>
   </card>
 </def>
@@ -64,7 +74,7 @@
 <def tag="card" for="User">
   <card class="user" param="default" merge>
     <header: param>
-      <h4 param="heading"><a><name/></a></h4>
+      <h4 param="heading"><name/></h4>
     </header:>
   </card>
 </def>
