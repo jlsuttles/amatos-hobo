@@ -222,7 +222,7 @@
 
           <section param="content-body">
             <view:description param="description"/>
-            <field-list fields="date, time" param/>
+            <field-list fields="date_and_time" param/>
           </section>
     </content:>
 

@@ -9,6 +9,8 @@ class Location < ActiveRecord::Base
     timestamps
   end
 
+  validates_presence_of :name, :address
+
   # --- Permissions --- #
 
   def create_permitted?

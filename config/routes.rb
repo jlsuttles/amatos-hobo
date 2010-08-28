@@ -10,6 +10,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'events',   :controller => 'event',    :action => 'index'
   map.connect 'locations', :controller => 'location', :action => 'index'
   map.connect 'menus', :controller => 'menu', :action => 'index'
+  map.connect 'menus/:name', :controller => 'menu', :action => 'view'
   map.connect 'news', :controller => 'news', :action => 'index'
   map.connect 'store_hours', :controller => 'store_hours', :action => 'index'
   

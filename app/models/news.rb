@@ -8,6 +8,8 @@ class News < ActiveRecord::Base
     timestamps
   end
 
+  validates_presence_of :title, :body
+
   # --- Permissions --- #
 
   def create_permitted?

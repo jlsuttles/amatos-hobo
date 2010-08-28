@@ -12,6 +12,8 @@ class Item < ActiveRecord::Base
   end
 
   belongs_to :menu
+  
+  validates_presence_of :name
 
   # --- Permissions --- #
 
