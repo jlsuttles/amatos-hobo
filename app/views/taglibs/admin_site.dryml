@@ -8,16 +8,12 @@
 
 <set-theme name="clean"/>
 
-<def tag="app-name">Amatos Woodfired Pizza .com - Admin Site</def>
+<def tag="app-name">AmatosWoodfiredPizza.com - Admin Site</def>
 
-<!-- <extend tag="page">
+<extend tag="page">
   <old-page merge>
-    <append-stylesheets:>
-      <stylesheet name="admin"/>
-    </append-stylesheets:>
     <footer:>
       <a href="#{base_url}/">View Site</a>
     </footer:>
   </old-page>
 </extend>
--->
