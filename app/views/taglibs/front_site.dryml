@@ -6,12 +6,4 @@
 
 <set-theme name="clean"/>
 
-<def tag="app-name">AmatosWoodfiredPizza.com Hobo as Plugin</def>
-
-<def tag="view" for="Dollars">
-  $<%= number_to_currency(this) %>
-</def>
-
-<def tag="input" for="Dollars" attrs="name">
-  $ <%= text_field_tag(name, this, attributes) %>
-</def>
+<def tag="app-name">AmatosWoodfiredPizza.com</def>
