@@ -1,10 +1,18 @@
 ActionController::Routing::Routes.draw do |map|
 
-  map.site_search  'search', :controller => 'admin/front', :action => 'search'
-  map.admin '/admin', :controller => 'admin/front', :action => 'index'
-
-  map.site_search  'search', :controller => 'front', :action => 'search'
   map.root :controller => 'front', :action => 'index'
+
+  #map.site_search  'search', :controller => 'front', :action => 'search'  
+
+  map.admin '/admin', :controller => 'admin/front', :action => 'index'
+  map.site_search  'search', :controller => 'admin/front', :action => 'search'
+
+  map.connect 'about_us', :controller => 'about_us',  :action => 'index'
+  map.connect 'events',   :controller => 'event',    :action => 'index'
+  map.connect 'locations', :controller => 'location', :action => 'index'
+  map.connect 'menus', :controller => 'menu', :action => 'index'
+  map.connect 'news', :controller => 'news', :action => 'index'
+  map.connect 'store_hours', :controller => 'store_hours', :action => 'index'
 
   Hobo.add_routes(map)
 
