@@ -706,7 +706,7 @@
           </header>
 
           <section param="content-body">
-            <view:body param="description"/>
+            <view:description param="description"/>
           </section>
     </content:>
 

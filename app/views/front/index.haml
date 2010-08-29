@@ -1,14 +1,17 @@
-#navigation
-  = render :partial => 'navigation'
+- @active_tab = :home
+- title "Amato's Woodfired Pizza", false
 
-#header
-  %h1 Amatos Woodfired Pizza
+#photos
+  = render :partial => 'photos'
 
-#store_hours
-  = render :partial => 'store_hours'
+#menus
+  = render :partial => 'menus'
 
-#locations
-  = render :partial => 'locations'
+#about_us
+  = render :partial => 'about_us'
 
 #events
   = render :partial => 'events'
+
+#news
+  = render :partial => 'news'
