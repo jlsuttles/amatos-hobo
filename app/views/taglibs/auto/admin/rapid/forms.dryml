@@ -15,7 +15,7 @@
 <def tag="form" for="Event">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, date, time, description" param/>
+    <field-list fields="name, description" param/>
     <div param="actions">
       <submit label="#{ht 'events.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
@@ -63,7 +63,7 @@
 <def tag="form" for="News">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="title, body" param/>
+    <field-list fields="" param/>
     <div param="actions">
       <submit label="#{ht 'news.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
