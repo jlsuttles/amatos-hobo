@@ -18,10 +18,10 @@ class FrontController < ApplicationController
     end
   end
 
-#  def search
-#    if params[:query]
-#      site_search(params[:query])
-#    end
-#  end
+  def search
+    if params[:query]
+      site_search(params[:query])
+    end
+  end
 
 end
