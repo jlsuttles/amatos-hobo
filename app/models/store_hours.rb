@@ -9,6 +9,8 @@ class StoreHours < ActiveRecord::Base
     timestamps
   end
 
+  validates_presence_of :name, :open_time, :close_time
+
   # --- Permissions --- #
 
   def create_permitted?

@@ -3,12 +3,13 @@ class Event < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
-    name        :string
-    date        :date
-    time        :time
-    description :text
+    name          :string
+    date_and_time :date
+    description   :text
     timestamps
   end
+
+  validates_presence_of :name, :date_and_time, :description
 
   # --- Permissions --- #
 

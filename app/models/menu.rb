@@ -9,6 +9,8 @@ class Menu < ActiveRecord::Base
   end
 
   has_many :items
+  
+  validates_presence_of :name
 
   # --- Permissions --- #
 

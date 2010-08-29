@@ -3,10 +3,12 @@ class News < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
-    title :string
-    body  :text
+    name        :string
+    description :text
     timestamps
   end
+
+  validates_presence_of :name, :description
 
   # --- Permissions --- #
 

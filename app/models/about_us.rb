@@ -8,6 +8,8 @@ class AboutUs < ActiveRecord::Base
     timestamps
   end
 
+  validates_presence_of :name, :description
+
   # --- Permissions --- #
 
   def create_permitted?
