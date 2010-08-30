@@ -3,11 +3,15 @@ class Location < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
-    name       :string
-    address    :string
-    directions :text
+    name            :string
+    address_line_1  :string
+    address_line_2  :string
+    phone_number    :string
+    directions      :text
     timestamps
   end
+
+  validates_presence_of :name
 
   # --- Permissions --- #
 

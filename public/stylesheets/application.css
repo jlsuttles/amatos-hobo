@@ -22,20 +22,24 @@ body {
     background-image: url('/images/logo_small.png');
     background-repeat: no-repeat;
     color: #ffffff;
-    
 }
 
 #navigation {
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: #222222;
-    float: left;
+    clear: both;
     text-align: center;
     text-transform: uppercase;
 }
 
 #navigation a:link,
 #navigation a:visited {
+    color: #ffff99;
+    text-decoration: none;
+}
+
+#navigation a:hover, a:active {
     color: #ffffff;
     text-decoration: none;
 }
@@ -47,33 +51,85 @@ body {
 }
 
 #navigation ul li {
-    line-height: 30px;
+    line-height: 40px;
     float: left;
     width: 16%;
-    font-size: 20px;
+    font-size: 22px;
 }
 
-div.location {
-    width:300px;
-    float: right;
+#menus {
+    width: 100%;
+    height: 40px;
+    background-color: #222222;
+    clear: both;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-#store_hours,
-#locations {
-    width: ;
+#menus a:link,
+#menus a:visited {
+    color: #ffff99;
+    text-decoration: none;
+}
+
+#menus a:hover, a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+#menus {
+	text-align: center;
+}
+#menus ul {
+    width: 960px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+#menus ul li {
+    line-height: 40px;
+    float: left;
+    padding: 0 25px;
+    font-size: 14px;
+	color: #cc3300;
+}
+
+#store_hours {
+    width: 300px;
     float: right;
     margin-top: 25px;
     margin-right: 25px;
     text-align: right;
     text-transform: uppercase;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#locations {
+    width: 500px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+div.location {
+    width: 250px;
+    float: left;
+}
+
+#store_hours h2, #locations h2 {
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffff99;
 }
 
 #main_content {
     /*width: 960px;
     margin: 0 auto;*/
-    background-color: #333333;
+    background-color: #ffff99;
     clear: left;
 }
 
@@ -96,4 +152,44 @@ div.location {
 #photos img.b {
     width: 300px;
     height: 400px;
+}
+
+#content {
+	width: 960px;
+	margin: 0 auto;
+	clear:both;
+}
+
+#about_us {
+	width: 31%;
+	float:left;
+	margin: 10px;
+	background-color: #ffffff;
+	border: 1px solid black;
+}
+
+#about_us h2, #about_us p,
+#news h2, #news p,
+#events h2, #events h3, #events h4, #events p {
+	padding: 10px;
+}
+
+#news {
+	width: 31%;
+	float: left;
+	margin: 10px;
+	background-color: #ffffff;
+	border: 1px solid black;
+}
+
+#events {
+	width: 31%;
+	float: left;
+	margin: 10px;
+	background-color: #ffffff;
+	border: 1px solid black;
+}
+
+#footer {
+	clear: both;
 }
