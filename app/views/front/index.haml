@@ -1,17 +1,17 @@
 - @active_tab = :home
 - title "Amato's Woodfired Pizza", false
 
-#photos
+#photos.clear
   = render :partial => 'photos'
 
-#menus
+#menus.clear
   = render :partial => 'menus'
 
-#content
+#main_content.clear
   #about_us
     = render :partial => 'about_us'
   
-  #content2
+  #side_content
     #news
       = render :partial => 'news'
     
