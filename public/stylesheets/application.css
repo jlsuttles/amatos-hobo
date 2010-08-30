@@ -1,17 +1,18 @@
 body {
     text-align: center;
     background-color: #ffff99;
-    font-size: 12px;
+    font-size: 14px;
 }
 
+/*** header ***/
+
 #container {
-    /*width: 960px;
-    margin: 0 auto;*/
-    width: 100%;
+	background-color:#000000;
+	background-image: url('/images/header_backgroung_tile.jpg');
+    background-repeat: repeat-x;
     min-width: 960px;
     text-align: left;
-    background-image: url('/images/header_backgroung_tile.jpg');
-    background-repeat: repeat-x;
+	width: 100%;
 }
 
 #header {
@@ -22,6 +23,39 @@ body {
     background-image: url('/images/logo_small.png');
     background-repeat: no-repeat;
     color: #ffffff;
+}
+
+#store_hours {
+    width: 300px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#locations {
+    width: 500px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+div.location {
+    width: 250px;
+    float: left;
+}
+
+#store_hours h2, #locations h2 {
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffff99;
 }
 
 #navigation {
@@ -55,6 +89,34 @@ body {
     float: left;
     width: 16%;
     font-size: 20px;
+}
+
+#main_content {
+    clear: both;
+	width: 100%;
+	height: 10px;
+	background-color: #ffff99;
+}
+
+#photos {
+    width: 100%;
+    height: 440px;
+    margin: 0;
+    background-color: #000000;
+    text-align: center;
+}
+#photos img {
+    margin-top: 20px;
+}
+#photos img.a {
+    width: 620px;
+    height: 400px;
+    margin-right:20px;
+}
+
+#photos img.b {
+    width: 300px;
+    height: 400px;
 }
 
 #menus {
@@ -93,114 +155,39 @@ body {
 	color: #ffff99;
 }
 
-#store_hours {
-    width: 300px;
-    float: right;
-    margin-top: 25px;
-    margin-right: 25px;
-    text-align: right;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 22px;
-}
-
-#locations {
-    width: 500px;
-    float: right;
-    margin-top: 25px;
-    margin-right: 25px;
-    text-align: right;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 22px;
-}
-
-div.location {
-    width: 250px;
-    float: left;
-}
-
-#store_hours h2, #locations h2 {
-	font-size: 16px;
-	line-height: 24px;
-	color: #ffff99;
-}
-
-#main_content {
-    /*width: 960px;
-    margin: 0 auto;*/
-    background-color: #ffff99;
-    clear: left;
-}
-
-#photos {
-    width: 100%;
-    height: 440px;
-    margin: 0;
-    background-color: #000000;
-    text-align: center;
-}
-#photos img {
-    margin-top: 20px;
-}
-#photos img.a {
-    width: 620px;
-    height: 400px;
-    margin-right:20px;
-}
-
-#photos img.b {
-    width: 300px;
-    height: 400px;
-}
-
 #content {
 	width: 960px;
+	height: 10px;
 	margin: 0 auto;
 	clear:both;
+	background-color: #ffffff;
+	background-image: url('/images/cream_paper_texture_2.jpg');
 }
 
 #about_us {
 	width: 31%;
 	float:left;
+}
+
+.single_about_us {
 	margin: 10px;
 	margin-top: 20px;
-	background-color: #ffffff;
+	background-color: transparent;
+	background-image: url('/images/cream_paper_texture_2.jpg');
 	border: 1px solid #222222;
 	color: #000000;
-}
-
-#about_us h2, #news h2, #events h2 {
-	font-size: 18px;
-	padding: 10px;
-	padding-bottom: 5px;
-	color: #000000;
-}
-
-#events h3 {
-	font-size: 16px;
-	padding: 10px;
-	padding-bottom: 0;
-}
-
-#events h4 {
-	font-size: 14px;
-	padding: 10px;
-	padding-bottom: 0;
-}
-
-#about_us p, #news p, #events p {
-	font-size: 12px;
-	line-height: 16px;
-	padding: 10px;
 }
 
 #news {
 	width: 31%;
 	float: left;
+}
+
+.single_news {
 	margin: 10px;
 	margin-top: 20px;
-	background-color: #ffffff;
+	background-color: transparent;
+	background-image: url('/images/tan_paper_texture.png');
 	border: 1px solid #222222;
 	color: #000000;
 }
@@ -208,12 +195,43 @@ div.location {
 #events {
 	width: 31%;
 	float: left;
+}
+
+.single_event {
 	margin: 10px;
 	margin-top: 20px;
-	background-color: #ffffff;
+	background-color: #transparent;
+	background-image: url('/images/wood_texture.jpg');
 	border: 1px solid #222222;
 	color: #000000;
 }
+
+/*** font styles for content ***/
+
+#about_us h2, #news h2, #events h2 {
+	color: #000000;
+	font-family: "luxi-serif-1","luxi-serif-2",serif;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 5px 10px;
+}
+
+#events h3 {
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 16px;
+	padding: 0 10px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#about_us p, #news p, #events p {
+	font-size: 14px;
+	line-height: 20px;
+	padding: 10px;
+}
+
+/*** footer ***/
 
 #footer {
 	clear: both;
