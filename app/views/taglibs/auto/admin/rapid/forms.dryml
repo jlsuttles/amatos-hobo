@@ -39,7 +39,7 @@
 <def tag="form" for="Location">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, address, directions" param/>
+    <field-list fields="name, address_line_1, address_line_2, phone_number, directions" param/>
     <div param="actions">
       <submit label="#{ht 'locations.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

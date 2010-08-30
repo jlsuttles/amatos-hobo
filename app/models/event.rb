@@ -11,6 +11,8 @@ class Event < ActiveRecord::Base
   
   validates_presence_of :name, :date_and_time, :description
 
+  validates_presence_of :name, :date_and_time, :description
+
   # --- Permissions --- #
 
   def create_permitted?

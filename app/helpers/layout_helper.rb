@@ -15,7 +15,7 @@ module LayoutHelper
   def stylesheet(*args)
     content_for(:head) { stylesheet_link_tag(*args) }
   end
-  
+
   def javascript(*args)
     content_for(:head) { javascript_include_tag(*args) }
   end
@@ -27,4 +27,6 @@ module LayoutHelper
   def active_when(active_tab_value)
     (@active_tab == active_tab_value) ? 'active' : ''
   end
+
 end
+

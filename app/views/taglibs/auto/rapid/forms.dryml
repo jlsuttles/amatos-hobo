@@ -1,5 +1,92 @@
 <!-- AUTOMATICALLY GENERATED FILE - DO NOT EDIT -->
 
+<<<<<<< HEAD
+=======
+<def tag="form" for="AboutUs">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description" param/>
+    <div param="actions">
+      <submit label="#{ht 'about_us.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Event">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, date_and_time, description" param/>
+    <div param="actions">
+      <submit label="#{ht 'events.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Item">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description, special_note, small_price, large_price, menu" param/>
+    <div param="actions">
+      <submit label="#{ht 'items.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Location">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, address_line_1, address_line_2, phone_number, directions" param/>
+    <div param="actions">
+      <submit label="#{ht 'locations.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Menu">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description" param/>
+    <div param="actions">
+      <submit label="#{ht 'menus.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="News">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description" param/>
+    <div param="actions">
+      <submit label="#{ht 'news.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="StoreHours">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, open_time, close_time" param/>
+    <div param="actions">
+      <submit label="#{ht 'store_hours.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+>>>>>>> new_master
 <def tag="form" for="User">
   <form merge param="default">
     <error-messages param/>

@@ -10,6 +10,8 @@ class AboutUs < ActiveRecord::Base
   
   validates_presence_of :name, :descriptions
 
+  validates_presence_of :name, :description
+
   # --- Permissions --- #
 
   def create_permitted?

@@ -466,7 +466,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="address, directions" param/>
+            <field-list fields="address_line_1, address_line_2, phone_number, directions" param/>
           </section>
     </content:>
 

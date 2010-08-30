@@ -3,8 +3,8 @@ class News < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
-    name :string
-    description  :text
+    name        :string
+    description :text
     timestamps
   end
 

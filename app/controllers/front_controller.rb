@@ -1,16 +1,15 @@
 class FrontController < ApplicationController
 
   hobo_controller
-  
+
   def index
     @about_us = AboutUs.all
-    @events = Event.all
+    @events = Event.all.reverse
     @locations = Location.all
     @menus = Menu.all
-    @news = News.all
+    @news = News.all.reverse
     @store_hours = StoreHours.all
   end
-  
 
   def summary
     if !current_user.administrator?

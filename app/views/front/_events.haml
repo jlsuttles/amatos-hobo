@@ -1,5 +1,6 @@
 - @events.each do |event|
-  %h2= event.name
-  %h3= event.date_and_time.strftime("%A, %B %d, %Y")
-  %h4= event.date_and_time.strftime("%I:%M %p").downcase
-  %p= event.description
+  %div.single_event
+    %h2= event.name
+    %h3= event.date_and_time.strftime("%A, %B %d, %Y")
+    %h3= event.date_and_time.strftime("%I:%M %p").downcase
+    %p= event.description
