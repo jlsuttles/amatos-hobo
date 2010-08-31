@@ -326,6 +326,7 @@
 
     <content: param>
           <header param="content-header">
+            <a:menu param="parent-link">&laquo; <ht key="items.actions.back" to="menu"><name/></ht></a:menu>
             <h2 param="heading">
               <ht key="items.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -343,7 +344,7 @@
 
           <section param="content-body">
             <view:description param="description"/>
-            <field-list fields="special_note, small_price, large_price, menu" param/>
+            <field-list fields="special_note, small_price, large_price" param/>
           </section>
     </content:>
 
@@ -587,6 +588,27 @@
 
           <section param="content-body">
             <view:description param="description"/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="menus.collection.heading.other" >
+                  Items
+                </ht>
+              </h3>
+
+              <collection:items param/>
+
+              <section param="add-to-collection" if="&can_create?(@menu.items)">
+                <h3 param="add-form-heading">
+                  <ht key="items.collection.add_form_heading">
+                    Add an Item
+                  </ht>
+                </h3>
+                <form with="&@item || new_for_current_user(@menu.items)" owner="menu" without-cancel param>
+                  <field-list: skip="menu"/>
+                  <submit: label="#{ht 'items.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
           </section>
     </content:>
 

@@ -37,6 +37,11 @@
     <header: param>
       <h4 param="heading"><a><name/></a></h4>
     </header:>
+    <body: param>
+      <ht key="items.collection.count" count="&this.items.size">
+         <count:items param/>
+      </ht>
+    </body:>
   </card>
 </def>
 
