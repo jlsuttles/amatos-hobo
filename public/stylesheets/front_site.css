@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #ffff99;
+  background-color: #000000;
   font-size: 14px;
 }
 
@@ -8,59 +8,67 @@ body {
   clear: both;
 }
 
-/*** header ***/
+/*** header ********************************************************/
 
 #container {
   background-color:  #000000;
-  background-image:   url('/images/header_backgroung_tile.jpg');
+  background-image:   url('/images/header_backgroung_tile_125.jpg');
   background-repeat:   repeat-x;
   min-width: 960px;
   text-align: left;
   width: 100%;
 }
 
+body.front #container {
+	background-color: #000000;
+}
+
 #header {
   width: 960px;
-  height: 180px;
+  height: 125px;
   margin: 0 auto;
   background-color: transparent;
-  background-image: url('/images/logo_small.png');
-  background-repeat: no-repeat;
   color: #ffffff;
+	overflow: hidden;
 }
 
-#store_hours {
+#header #logo {
+	float:left;
+}
+
+#header #store_hours {
   width: 300px;
   float: right;
-  margin-top: 25px;
-  margin-right: 25px;
+  margin: 15px 0;
   text-align: right;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 22px;
 }
 
-#locations {
+#header #locations {
   width: 500px;
   float: right;
-  margin-top: 25px;
-  margin-right: 25px;
+  margin: 15px 0;
   text-align: right;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 22px;
 }
 
-div.location {
+#header div.location {
   width: 250px;
   float: left;
 }
 
-#store_hours h2, #locations h2 {
+#header #store_hours h2, 
+#header #locations h2 {
   font-size: 16px;
   line-height: 24px;
   color: #ffff99;
 }
+
+/*** navigation ****************************************************/
 
 #navigation {
   width: 100%;
@@ -94,41 +102,37 @@ div.location {
   text-decoration: none;
 }
 
-/*#main_content {
-  position: relative;
-  clear: both;
-  width: 100%;
-  background-color: #ffffff;
-  background-image: url('/images/cream_paper_texture_2.jpg');
-}*/
+/*** front page photos *********************************************/
 
-#photos {
+body.front #photos {
   width: 960px;
+  height: 440px;
   margin: 0 auto;
   position: relative;
-  height: 440px;
   background-color: #000000;
 }
-#photos img {
+
+body.front #photos img {
   margin-top: 20px;
+	position: absolute;
+  display: block;
 }
-#landscape img {
-  position: absolute;
-  display:block;
+
+body.front #landscape img {
   left: 10px;
   width: 620px;
   height: 400px;
 }
 
-#portrait img {
-  display:blocks;
-  position: absolute;
+body.front #portrait img {
   right: 10px;
   width: 300px;
   height: 400px;
 }
 
-#menus {
+/*** front page menus navigation ***********************************/
+
+body.front #menus {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -138,13 +142,13 @@ div.location {
   text-transform: uppercase;
 }
 
-#menus ul {
+body.front #menus ul {
   width: 960px;
   margin: 0 auto;
   list-style-type: none;
 }
 
-#menus ul li {
+body.front #menus ul li {
   line-height: 30px;
   float: left;
   padding: 0 25px;
@@ -153,63 +157,56 @@ div.location {
   color: #ffff99;
 }
 
-#menus a:link,
-#menus a:visited {
+body.front #menus a:link,
+body.front #menus a:visited {
   color: #ffff99;
   text-decoration: none;
 }
 
-#menus a:hover, a:active {
+body.front #menus a:hover, a:active {
   color: #ffffff;
   text-decoration: none;
 }
 
-#main_content {
-  width: 960px;
-  margin: 0 auto;
-  text-align: left;
-  filter:alpha(opacity=60);
-  -moz-opacity:0.6;
-  -khtml-opacity: 0.6;
-  opacity: 0.6;
-}
+/*** front page main content ***************************************/
 
-#about_us {
+body.front #about_us {
   width: 300px;
+	background-repeat: no-repeat;
   float:left;
 	margin-left: 10px;
 }
 
-.single_about_us {
+body.front .single_about_us {
   margin: 20px 0;
   background-color: #222222;
   border: 0 solid #222222;
   color: #ffffff;
 }
 
-#secondary_content {
+body.front #secondary_content {
 	width: 630px;
 	float: right;
 }
 
-#news {
+body.front #news {
   width: 300px;
   float: left;
 }
 
-.single_news {
+body.front .single_news {
   margin: 20px 0;
   background-color: #222;
   border: 0 solid #222222;
   color: #ffffff;
 }
 
-#events {
+body.front #events {
   width: 310px;
   float: right;
 }
 
-.single_event {
+body.front .single_event {
   margin: 20px 0;
 	margin-right: 10px;
   background-color: #222;
@@ -217,9 +214,9 @@ div.location {
   color: #ffffff;
 }
 
-/*** font styles for content ***/
-
-#about_us h2, #news h2, #events h2 {
+body.front #about_us h2, 
+body.front #news h2, 
+body.front #events h2 {
   font-family: "luxi-serif-1","luxi-serif-2",serif;
   font-size: 18px;
   line-height: 22px;
@@ -229,23 +226,71 @@ div.location {
 	letter-spacing: .1em;
 }
 
-#events h3 {
+body.front #events h3 {
   font-size: 12px;
   font-weight: normal;
   line-height: 16px;
   padding: 0 10px;
   text-align: right;
   text-transform: uppercase;
+	color: #ffffff;
 }
 
-#about_us p, #news p, #events p {
+body.front #about_us p, 
+body.front #news p, 
+body.front #events p {
   font-size: 14px;
   line-height: 20px;
   padding: 10px;
   text-transform: none;
+	color: #ffffff;
 }
 
-/*** footer ***/
+/*** main content **************************************************/
+
+#main_content {
+	position: relative;
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+	background-color: #000000;
+}
+
+#main_content p,
+#main_content h1,
+#main_content h2,
+#main_content h3 {
+	color: #000000;
+	padding: 10px 25px;
+}
+
+#main_content p {
+	line-height: 22px;
+}
+
+body.menus #main_content h3 {
+	display: inline;
+}
+body.menus ul {
+	list-style-type: none;
+}
+body.menus #menus {
+	width: 100%;
+}
+body.menus #main_content div.menu,
+body.locations #main_content div.location,
+body.events #main_content div.single_event,
+body.news #main_content div.single_news,
+body.about_us #main_content div.single_about_us,
+body.store_hours #main_content div.store_hour {
+	background-color: #ffffcc;
+	margin: 25px 0;
+}
+body.menus div.item {
+	padding-left: 25px;
+}
+
+/*** footer ********************************************************/
 
 #footer {
   clear: both;

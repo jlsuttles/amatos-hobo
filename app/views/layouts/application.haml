@@ -18,15 +18,18 @@
     #container
       
       #header
+        #logo
+          %a{ :href => '/'}
+            %img{ :src => '/images/logo_small_125.png', :alt => 'Amato\'s Logo'}
         #locations.tk-museo-sans
-          = render :partial => 'layouts/locations'
+          = render :partial => '/layouts/locations'
         #store_hours.tk-museo-sans
-          = render :partial => 'layouts/store_hours'
+          = render :partial => '/layouts/store_hours'
       
       #navigation.tk-museo-sans.clear
-        = render :partial => 'layouts/navigation'
+        = render :partial => '/layouts/navigation'
       
       = yield
       
       #footer.clear
-        = render :partial => 'layouts/footer'
+        = render :partial => '/layouts/footer'

@@ -5,7 +5,6 @@
     var opts = $.extend({}, $.fn.actAsSlideshow.defaults, options);
 
     return this.each(function() {
-			console.log('hello ehren');
       var container = $(this);
       container.find('img:gt(0)').hide();
       setInterval(function(){

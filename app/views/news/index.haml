@@ -1,0 +1,8 @@
+- @active_tab = :news
+- title "News", true
+
+#main_content
+  - @news.each do |news|
+    %div.single_news
+      %h2= news.name
+      %p= news.description

@@ -8,9 +8,9 @@ ActionController::Routing::Routes.draw do |map|
   map.site_search  'search', :controller => 'admin/front', :action => 'search'
 
   map.connect 'about_us', :controller => 'about_us',  :action => 'index'
-  map.connect 'events',   :controller => 'event',    :action => 'index'
-  map.connect 'locations', :controller => 'location', :action => 'index'
-  map.connect 'menus', :controller => 'menu', :action => 'index'
+  map.connect 'events',   :controller => 'events',    :action => 'index'
+  map.connect 'locations', :controller => 'locations', :action => 'index'
+  map.connect 'menus', :controller => 'menus', :action => 'index'
   map.connect 'news', :controller => 'news', :action => 'index'
   map.connect 'store_hours', :controller => 'store_hours', :action => 'index'
 

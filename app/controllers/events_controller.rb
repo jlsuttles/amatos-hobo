@@ -1,5 +1,9 @@
 class EventsController < ApplicationController
 
-  def index; end
+  def index
+    @events = Event.all.reverse
+    @locations = Location.all
+    @store_hours = StoreHours.all
+  end
 
 end

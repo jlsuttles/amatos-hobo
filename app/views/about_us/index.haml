@@ -1,0 +1,8 @@
+- @active_tab = :about_us
+- title "About Us", true
+
+#main_content
+  - @about_us.each do |about_us|
+    %div.single_about_us
+      %h2= about_us.name
+      %p= about_us.description
