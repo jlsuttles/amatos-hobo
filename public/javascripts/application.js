@@ -1,9 +1,11 @@
+//http://github.com/nummi/JavaScript-Snippets
 (function($) {
   // Adapted from Jonathan Snook
   $.fn.actAsSlideshow = function(options) {
     var opts = $.extend({}, $.fn.actAsSlideshow.defaults, options);
 
     return this.each(function() {
+			console.log('hello ehren');
       var container = $(this);
       container.find('img:gt(0)').hide();
       setInterval(function(){
@@ -15,6 +17,10 @@
   };
 
   $.fn.actAsSlideshow.defaults = { speed: 3500 };
-	$('#landscape').actAsSlideshow();
-	alert(‘Hello World!’);
+	
+	$(function(){
+		$('#landscape').actAsSlideshow({ speed: 7000 });
+		$('#portrait').actAsSlideshow({ speed: 7000 });
+		});	
+
 })(jQuery);
