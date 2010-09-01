@@ -1,7 +1,7 @@
 <!-- Global taglib - these tags are shared across all subsites -->
 
 <def tag="view" for="Dollars">
-  $<%= number_to_currency(this) %>
+  <%= number_to_currency(this) %>
 </def>
 
 <def tag="input" for="Dollars" attrs="name">
