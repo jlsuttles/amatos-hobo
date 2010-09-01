@@ -3,26 +3,20 @@
 
 #main_content
   #menus
-    %ul
-      - @menus.each do |menu|
-        %div.menu
-          %li
-            %h2= menu.name
-            %p= menu.description
-            %ul
-          
-            - menu.items.each do |item|
-              %div.item
-                %li
-                  %h3= item.name
-                  - if item.small_price
-                    %span
-                      $
-                      =item.small_price
-                  - if item.small_price and item.large_price
-                    %span /
-                  -if item.large_price
-                    %span
-                      $
-                      =item.large_price
-                  %p= item.description
+    - @menus.each do |menu|
+      %div.menu
+        %h2= menu.name
+        %p= menu.description
+        - menu.items.each do |item|
+          %div.item
+            %h3= item.name
+            %span
+            - if item.small_price
+              $
+              =item.small_price
+            - if item.small_price and item.large_price
+              \/
+            -if item.large_price
+              $
+              =item.large_price
+            %p.clear= item.description

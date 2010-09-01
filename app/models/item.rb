@@ -11,8 +11,6 @@ class Item < ActiveRecord::Base
     timestamps
   end
 
-  validates_presence_of :name
-
   belongs_to :menu
   
   validates_presence_of :name

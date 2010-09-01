@@ -7,8 +7,6 @@ class AboutUs < ActiveRecord::Base
     description :text
     timestamps
   end
-  
-  validates_presence_of :name, :descriptions
 
   validates_presence_of :name, :description
 

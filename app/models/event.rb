@@ -8,8 +8,6 @@ class Event < ActiveRecord::Base
     description   :text
     timestamps
   end
-  
-  validates_presence_of :name, :date_and_time, :description
 
   validates_presence_of :name, :date_and_time, :description
 

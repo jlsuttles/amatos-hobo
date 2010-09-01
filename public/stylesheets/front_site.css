@@ -1,7 +1,8 @@
 body {
   text-align: center;
-  background-color: #000000;
+  background-color: #000;
   font-size: 14px;
+	background-image: url('/images/black_noise.png');
 }
 
 .clear {
@@ -11,7 +12,7 @@ body {
 /*** header ********************************************************/
 
 #container {
-  background-color:  #000000;
+  background-color:  #;
   background-image:   url('/images/header_backgroung_tile_125.jpg');
   background-repeat:   repeat-x;
   min-width: 960px;
@@ -20,7 +21,7 @@ body {
 }
 
 body.front #container {
-	background-color: #000000;
+	background-color: #;
 }
 
 #header {
@@ -28,7 +29,7 @@ body.front #container {
   height: 125px;
   margin: 0 auto;
   background-color: transparent;
-  color: #ffffff;
+  color: #fff;
 	overflow: hidden;
 }
 
@@ -65,7 +66,7 @@ body.front #container {
 #header #locations h2 {
   font-size: 16px;
   line-height: 24px;
-  color: #ffff99;
+  color: #ff9;
 }
 
 /*** navigation ****************************************************/
@@ -73,7 +74,7 @@ body.front #container {
 #navigation {
   width: 100%;
   height: 30px;
-  background-color: #222222;
+  background-color: #222;
   text-align: center;
   text-transform: uppercase;
 }
@@ -93,12 +94,12 @@ body.front #container {
 
 #navigation a:link,
 #navigation a:visited {
-  color: #ffff99;
+  color: #ff9;
   text-decoration: none;
 }
 
 #navigation a:hover, a:active {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -109,7 +110,7 @@ body.front #photos {
   height: 440px;
   margin: 0 auto;
   position: relative;
-  background-color: #000000;
+  background-color: #000;
 }
 
 body.front #photos img {
@@ -137,7 +138,7 @@ body.front #menus {
   overflow: hidden;
   width: 100%;
   height: 30px;
-  background-color: #222222;
+  background-color: #222;
   text-align: center;
   text-transform: uppercase;
 }
@@ -154,17 +155,17 @@ body.front #menus ul li {
   padding: 0 25px;
   width: auto;
   font-size: 14px;
-  color: #ffff99;
+  color: #ff9;
 }
 
 body.front #menus a:link,
 body.front #menus a:visited {
-  color: #ffff99;
+  color: #ff9;
   text-decoration: none;
 }
 
 body.front #menus a:hover, a:active {
-  color: #ffffff;
+  color: #ff9;
   text-decoration: none;
 }
 
@@ -177,13 +178,6 @@ body.front #about_us {
 	margin-left: 10px;
 }
 
-body.front .single_about_us {
-  margin: 20px 0;
-  background-color: #222222;
-  border: 0 solid #222222;
-  color: #ffffff;
-}
-
 body.front #secondary_content {
 	width: 630px;
 	float: right;
@@ -194,24 +188,20 @@ body.front #news {
   float: left;
 }
 
-body.front .single_news {
-  margin: 20px 0;
-  background-color: #222;
-  border: 0 solid #222222;
-  color: #ffffff;
-}
-
 body.front #events {
   width: 310px;
   float: right;
 }
 
-body.front .single_event {
+body.front .single_about_us,
+body.front .single_event,
+body.front .single_news {
   margin: 20px 0;
-	margin-right: 10px;
   background-color: #222;
-  border: 0 solid #222222;
-  color: #ffffff;
+  border: 0 solid #222;
+  color: #222;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
 }
 
 body.front #about_us h2, 
@@ -220,9 +210,9 @@ body.front #events h2 {
   font-family: "luxi-serif-1","luxi-serif-2",serif;
   font-size: 18px;
   line-height: 22px;
-  padding: 5px 10px;
+  padding: 20px 20px;
   text-transform: none;
-  color: #c00;
+  color: #f00;
 	letter-spacing: .1em;
 }
 
@@ -230,7 +220,7 @@ body.front #events h3 {
   font-size: 12px;
   font-weight: normal;
   line-height: 16px;
-  padding: 0 10px;
+  padding: 5px 20px;
   text-align: right;
   text-transform: uppercase;
 	color: #ffffff;
@@ -241,7 +231,7 @@ body.front #news p,
 body.front #events p {
   font-size: 14px;
   line-height: 20px;
-  padding: 10px;
+  padding: 5px 20px;
   text-transform: none;
 	color: #ffffff;
 }
@@ -256,19 +246,20 @@ body.front #events p {
 	background-color: #000000;
 }
 
-#main_content p,
 #main_content h1,
 #main_content h2,
 #main_content h3 {
 	color: #000000;
-	padding: 10px 25px;
+	padding: 25px 75px 10px 75px;
 }
 
 #main_content p {
 	line-height: 22px;
+	padding: 5px 125px 35px 125px;
+	font-size: 16px;
 }
 
-body.menus #main_content h3 {
+body.menus #main_content .item h3 {
 	display: inline;
 }
 body.menus ul {
@@ -283,8 +274,10 @@ body.events #main_content div.single_event,
 body.news #main_content div.single_news,
 body.about_us #main_content div.single_about_us,
 body.store_hours #main_content div.store_hour {
-	background-color: #ffffcc;
+	background-color: #ffff99;
 	margin: 25px 0;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 body.menus div.item {
 	padding-left: 25px;
