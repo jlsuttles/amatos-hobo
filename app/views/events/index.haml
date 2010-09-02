@@ -1,12 +1,13 @@
 - @active_tab = :events
 - title "Events", true
 
-#main_content
-  #photo
+#main_content.clear.centered
+  .one_third
     %img{ :src => '/images/portrait_inside_mid_dining_room.jpg'}
-  - @events.each do |event|
-    %div.single_event
-      %h2= event.name
-      %h3= event.date_and_time.strftime("%A, %B %d, %Y")
-      %h3= event.date_and_time.strftime("%I:%M %p").downcase
-      %p= event.description
+  .two_thirds
+    - @events.each do |event|
+      .box.rounded_10.gradient
+        %h2= event.name
+        %h3= event.date_and_time.strftime("%A, %B %d, %Y")
+        %h3= event.date_and_time.strftime("%I:%M %p").downcase
+        %p= event.description

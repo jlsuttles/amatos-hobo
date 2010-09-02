@@ -1,19 +1,20 @@
 - @active_tab = :home
 - title "Home", false
 
-#photos.clear
-  = render :partial => 'photos'
+#front
+  .photos.clear.centered
+    = render :partial => 'photos'
 
-#menus.clear
-  = render :partial => 'menus'
+  .menus.clear.gradient
+    = render :partial => 'menus'
 
-#main_content.clear
-  #about_us
-    = render :partial => 'about_us'
+  #main_content.clear.centered
+    .about_us.one_third
+      = render :partial => 'about_us'
   
-  #secondary_content
-    #news
-      = render :partial => 'news'
+    .secondary_content.two_thirds
+      .news.one_third
+        = render :partial => 'news'
     
-    #events
-      = render :partial => 'events'
+      .events.one_third
+        = render :partial => 'events'

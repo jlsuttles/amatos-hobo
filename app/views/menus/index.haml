@@ -1,12 +1,12 @@
 - @active_tab = :menus
 - title "Menus", true
 
-#main_content
-  #photo
+#main_content.clear.centered
+  .one_third
     %img{ :src => '/images/portrait_funghi.jpg' }
-  #menus
+  .two_thirds
     - @menus.each do |menu|
-      %div.menu
+      .box.rounded_10.gradient
         %h2= menu.name
         %p= menu.description
         - menu.items.each do |item|

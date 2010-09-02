@@ -1,10 +1,11 @@
 - @active_tab = :about_us
 - title "About Us", true
 
-#main_content
-  #photo
+#main_content.clear.centered
+  .one_third
     %img{ :src => '/images/portrait_outside_dine_in.jpg'}
-  - @about_us.each do |about_us|
-    %div.single_about_us
-      %h2= about_us.name
-      %p= about_us.description
+  .two_thirds
+    - @about_us.each do |about_us|
+      .box.rounded_10.gradient
+        %h2= about_us.name
+        %p= about_us.description

@@ -17,16 +17,12 @@
   
     #container
       
-      #header
-        #logo
-          %a{ :href => '/'}
-            %img{ :src => '/images/logo_small_125.png', :alt => 'Amato\'s Logo'}
-        #locations
-          = render :partial => '/layouts/locations'
-        #store_hours
-          = render :partial => '/layouts/store_hours'
-      
-      #navigation
+      #header.centered
+        %a{ :href => '/'}
+          %img{ :src => '/images/logo_small_125.png', :alt => 'Amato\'s Logo'}
+        = render :partial => '/layouts/locations'
+        = render :partial => '/layouts/store_hours'
+      #navigation.gradient
         = render :partial => '/layouts/navigation'
       
       = yield

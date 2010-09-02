@@ -1,3 +1,4 @@
-%ul
+%ul.centered
   - menus.each do |menu|
-    %li= menu.name
+    %a{ :href => '/menus' }
+      %li= menu.name

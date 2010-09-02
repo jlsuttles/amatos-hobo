@@ -1,5 +1,5 @@
 - @events.each do |event|
-  %div.single_event
+  .box.rounded_10.gradient
     %h2= event.name
     %h3= event.date_and_time.strftime("%A, %B %d, %Y")
     %h3= event.date_and_time.strftime("%I:%M %p").downcase

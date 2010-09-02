@@ -1,13 +1,15 @@
 - @active_tab = :locations
 - title "Locations", true
 
-#main_content
-  #photo
+#main_content.clear.centered
+  .one_third
     %img{ :src => '/images/portrait_outside_corner.jpg'}
-  - if @locations
-    - @locations.each do |location|
-      %div.location
-        %h2= location.name
-        %p= location.address_line_1
-        %p= location.address_line_2
-        %p= location.phone_number
+  .two_thirds
+    - if @locations
+      - @locations.each do |location|
+        .box.rounded_10.gradient
+          %h2= location.name
+          %p= location.address_line_1
+          %p= location.address_line_2
+          %p= location.phone_number
+          %p= location.directions

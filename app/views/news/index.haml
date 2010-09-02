@@ -1,10 +1,11 @@
 - @active_tab = :news
 - title "News", true
 
-#main_content
-  #photo
+#main_content.clear.centered
+  .one_third
     %img{ :src => '/images/portrait_inside_front_dining_room.jpg'}
-  - @news.each do |news|
-    %div.single_news
-      %h2= news.name
-      %p= news.description
+  .two_thirds
+    - @news.each do |news|
+      .box.rounded_10.gradient
+        %h2= news.name
+        %p= news.description

@@ -1,10 +1,12 @@
-- if @store_hours
-  %h2 Hours
-  - @store_hours.each do |store_hour|
-    %p
-      %span.name
-        = store_hour.try.name
-        - unless store_hour.open_time == store_hour.close_time 
-          %span.hours
-            = store_hour.open_time.strftime("%I:%M %p").downcase + ' - ' +store_hour.close_time.strftime("%I:%M %p").downcase
+.one_third
+  - if @store_hours
+    %a{ :href => '/store_hours'}
+      %h2 Hours
+      - @store_hours.each do |store_hour|
+        %p
+          %span.name
+            = store_hour.try.name
+            - unless store_hour.open_time == store_hour.close_time 
+              %span.hours
+                = store_hour.open_time.strftime("%I:%M %p").downcase + ' - ' +store_hour.close_time.strftime("%I:%M %p").downcase
   

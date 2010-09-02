@@ -1,3 +1,36 @@
+.clear {
+  clear: both;
+}
+
+.gradient{
+  background: #333;
+  background: -moz-linear-gradient(top, #333, transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(#333), to(transparent));
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#333', EndColorStr='transparent', GradientType=0);
+  }
+
+.rounded_10{
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.centered {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.one_third {
+	width: 320px;
+	margin: 15px 0;
+}
+
+.two_thirds {
+	width: 640px;
+	margin: 25px 0;
+}
+
+/*** body ********************************************************/
+
 body {
   text-align: center;
   background-color: #000;
@@ -5,68 +38,60 @@ body {
 	background-image: url('/images/black_noise.png');
 }
 
-.clear {
-  clear: both;
+#container {
+  background-color:   transparent;
+  background-image:   url('/images/header_backgroung_tile_125.jpg');
+  background-repeat:  repeat-x;
+  min-width:          960px;
+  text-align:         left;
+  width:              100%;
 }
 
 /*** header ********************************************************/
 
-#container {
-  background-color:  #;
-  background-image:   url('/images/header_backgroung_tile_125.jpg');
-  background-repeat:   repeat-x;
-  min-width: 960px;
-  text-align: left;
-  width: 100%;
-}
-
-body.front #container {
-	background-color: #;
-}
-
 #header {
-  width: 960px;
-  height: 125px;
-  margin: 0 auto;
   background-color: transparent;
-  color: #fff;
-	overflow: hidden;
+  color:            #fff;
+  height:           125px;
+	overflow:         hidden;
+	position:         relative;
 }
 
-#header #logo {
-	float:left;
+#header img {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-#header #store_hours {
-  width: 300px;
-  float: right;
-  margin: 15px 0;
-  text-align: right;
-  text-transform: uppercase;
+#header .one_third {
+	float: left;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#header h2 {
   font-size: 14px;
   line-height: 22px;
-}
-
-#header #locations {
-  width: 500px;
-  float: right;
-  margin: 15px 0;
-  text-align: right;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-#header div.location {
-  width: 250px;
-  float: left;
-}
-
-#header #store_hours h2, 
-#header #locations h2 {
-  font-size: 16px;
-  line-height: 24px;
   color: #ff9;
+	margin-right: 10px;
+}
+
+#header p {
+	font-size: 12px;
+	line-height: 18px;
+	margin-right: 10px;
+}
+
+#header a:link,
+#header a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header a:hover, 
+#header a:active {
+  color: #ff9;
+  text-decoration: none;
 }
 
 /*** navigation ****************************************************/
@@ -74,14 +99,11 @@ body.front #container {
 #navigation {
   width: 100%;
   height: 30px;
-  background-color: #222;
   text-align: center;
   text-transform: uppercase;
 }
 
 #navigation ul {
-  width: 960px;
-  margin: 0 auto;
   list-style-type: none;
 }
 
@@ -98,34 +120,32 @@ body.front #container {
   text-decoration: none;
 }
 
-#navigation a:hover, a:active {
+#navigation a:hover, 
+#navigation a:active {
   color: #fff;
   text-decoration: none;
 }
 
 /*** front page photos *********************************************/
 
-body.front #photos {
-  width: 960px;
+#front .photos {
   height: 440px;
-  margin: 0 auto;
   position: relative;
-  background-color: #000;
 }
 
-body.front #photos img {
+#front .photos img {
   margin-top: 20px;
 	position: absolute;
   display: block;
 }
 
-body.front #landscape img {
+#landscape img {
   left: 10px;
   width: 620px;
   height: 400px;
 }
 
-body.front #portrait img {
+#portrait img {
   right: 10px;
   width: 300px;
   height: 400px;
@@ -133,138 +153,108 @@ body.front #portrait img {
 
 /*** front page menus navigation ***********************************/
 
-body.front #menus {
+#front .menus {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 30px;
-  background-color: #222;
   text-align: center;
   text-transform: uppercase;
 }
 
-body.front #menus ul {
-  width: 960px;
-  margin: 0 auto;
+#front .menus ul {
   list-style-type: none;
 }
 
-body.front #menus ul li {
+#front .menus ul li {
   line-height: 30px;
   float: left;
   padding: 0 25px;
   width: auto;
   font-size: 14px;
   color: #ff9;
+	letter-spacing: .05em;
 }
 
-body.front #menus a:link,
-body.front #menus a:visited {
+#front .menus a:link,
+#front .menus a:visited {
   color: #ff9;
   text-decoration: none;
 }
 
-body.front #menus a:hover, a:active {
-  color: #ff9;
+#front .menus a:hover, 
+#front .menus a:active {
+  color: #fff;
   text-decoration: none;
 }
 
 /*** front page main content ***************************************/
 
-body.front #about_us {
-  width: 300px;
-	background-repeat: no-repeat;
+#front .about_us,
+#front .news {
   float:left;
-	margin-left: 10px;
+	margin: 0;
 }
 
-body.front #secondary_content {
-	width: 630px;
+#front .secondary_content,
+#front .events {
 	float: right;
+	margin: 0;
 }
 
-body.front #news {
-  width: 300px;
-  float: left;
+#front #main_content .box {
+  margin: 20px 10px;
+	padding: 10px;
 }
 
-body.front #events {
-  width: 310px;
-  float: right;
-}
-
-body.front .single_about_us,
-body.front .single_event,
-body.front .single_news {
-  margin: 20px 0;
-  background-color: #222;
-  border: 0 solid #222;
-  color: #222;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
-}
-
-body.front #about_us h2, 
-body.front #news h2, 
-body.front #events h2 {
+#front #main_content .box h2 {
   font-size: 18px;
   line-height: 22px;
-  padding: 20px 20px;
-  text-transform: none;
-  color: #f00;
+  padding: 10px 15px;
+  color: #c00;
 }
 
-body.front #events h3 {
+#front #main_content .box h3 {
   font-size: 12px;
   font-weight: normal;
   line-height: 16px;
-  padding: 5px 20px;
+  padding: 0 15px;
   text-align: right;
   text-transform: uppercase;
-	color: #ffffff;
+	color: #ff6;
 }
 
-body.front #about_us p, 
-body.front #news p, 
-body.front #events p {
+#front #main_content .box p {
   font-size: 14px;
   line-height: 20px;
-  padding: 5px 20px;
+  padding: 10px 15px;
   text-transform: none;
-	color: #ffffff;
+	color: #fff;
 }
 
 /*** main content **************************************************/
 
 #main_content {
 	position: relative;
-  width: 960px;
-  margin: 0 auto;
   text-align: left;
-	background-color: #000000;
 }
 
-body.menus #main_content div.menu,
-body.locations #main_content div.location,
-body.events #main_content div.single_event,
-body.news #main_content div.single_news,
-body.about_us #main_content div.single_about_us,
-body.store_hours #main_content div.store_hour {
-	background-color: #222;
+#main_content .box {
 	color:#ccc;
 	margin: 25px 0;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	width: 620px;
-	float: right;
 	padding: 25px 0;
 }
 
-#main_content #photo{
+#main_content .one_third{
 	width: 300px;
 	float: left;
 	overflow: hidden;
 	margin: 25px 0;
+}
+
+#main_content .two_thirds {
+	float:right;
+	margin: 0;
 }
 
 #main_content h1 {

@@ -1,16 +1,17 @@
 - @active_tab = :store_hours
 - title "Store Hours", true
 
-#main_content
-  #photo
+#main_content.clear.centered
+  .one_third
     %img{ :src => '/images/portrait_inside_bar.jpg'}
-  - if @store_hours
-    %div.store_hour
-      %h2 Hours
-      - @store_hours.each do |store_hour|
-        %p
-          %span.name
-            = store_hour.try.name
-            - unless store_hour.open_time == store_hour.close_time 
-              %span.hours
-                = store_hour.open_time.strftime("%I:%M %p").downcase + ' - ' +store_hour.close_time.strftime("%I:%M %p").downcase
+  .two_thirds
+    - if @store_hours
+      .box.rounded_10.gradient
+        %h2 Hours
+        - @store_hours.each do |store_hour|
+          %p
+            %span.name
+              = store_hour.try.name
+              - unless store_hour.open_time == store_hour.close_time 
+                %span.hours
+                  = store_hour.open_time.strftime("%I:%M %p").downcase + ' - ' +store_hour.close_time.strftime("%I:%M %p").downcase
