@@ -268,6 +268,12 @@ body.menus ul {
 body.menus #menus {
 	width: 100%;
 }
+
+
+body.menus div.item {
+	padding-left: 25px;
+}
+
 body.menus #main_content div.menu,
 body.locations #main_content div.location,
 body.events #main_content div.single_event,
@@ -279,9 +285,7 @@ body.store_hours #main_content div.store_hour {
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
-body.menus div.item {
-	padding-left: 25px;
-}
+
 
 /*** footer ********************************************************/
 
