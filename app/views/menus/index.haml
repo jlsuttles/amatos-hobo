@@ -13,12 +13,12 @@
           %div.item
             %h3= item.name
             %span
-            - if item.small_price
-              $
-              =item.small_price
-            - if item.small_price and item.large_price
-              \/
-            -if item.large_price
-              $
-              =item.large_price
+              - if item.small_price
+                $
+                =item.small_price
+              - if item.small_price and item.large_price
+                \/
+              -if item.large_price
+                $
+                =item.large_price
             %p.clear= item.description

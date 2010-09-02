@@ -1,8 +1,9 @@
 - if @locations
   - @locations.each do |location|
-    %div.location
-      %h2= location.name
-      %p= location.address_line_1
-      %p= location.address_line_2
-      %p= location.phone_number
+    %a{ :href => 'http://maps.google.com/maps?hl=en&client=safari&q=6+s+sandusky+delaware+oh&ie=UTF8&hq=&hnear=6+S+Sandusky+St,+Delaware,+Ohio+43015&ll=40.298349,-83.067799&spn=0.008265,0.021179&z=16&layer=c&cbll=40.298521,-83.067786&panoid=JnpvTExpGfNbHvzNVACuKQ&cbp=12,272.01,,0,-7.86'}
+      %div.location
+        %h2= location.name
+        %p= location.address_line_1
+        %p= location.address_line_2
+        %p= location.phone_number
   

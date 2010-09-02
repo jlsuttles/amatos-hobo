@@ -21,12 +21,12 @@
         #logo
           %a{ :href => '/'}
             %img{ :src => '/images/logo_small_125.png', :alt => 'Amato\'s Logo'}
-        #locations.tk-museo-sans
+        #locations
           = render :partial => '/layouts/locations'
-        #store_hours.tk-museo-sans
+        #store_hours
           = render :partial => '/layouts/store_hours'
       
-      #navigation.tk-museo-sans.clear
+      #navigation
         = render :partial => '/layouts/navigation'
       
       = yield

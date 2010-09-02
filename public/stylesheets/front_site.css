@@ -207,13 +207,11 @@ body.front .single_news {
 body.front #about_us h2, 
 body.front #news h2, 
 body.front #events h2 {
-  font-family: "luxi-serif-1","luxi-serif-2",serif;
   font-size: 18px;
   line-height: 22px;
   padding: 20px 20px;
   text-transform: none;
   color: #f00;
-	letter-spacing: .1em;
 }
 
 body.front #events h3 {
@@ -246,18 +244,56 @@ body.front #events p {
 	background-color: #000000;
 }
 
-#main_content h1,
-#main_content h2,
-#main_content h3 {
-	color: #000000;
-	padding: 15px 25px;
+body.menus #main_content div.menu,
+body.locations #main_content div.location,
+body.events #main_content div.single_event,
+body.news #main_content div.single_news,
+body.about_us #main_content div.single_about_us,
+body.store_hours #main_content div.store_hour {
+	background-color: #222;
+	color:#ccc;
+	margin: 25px 0;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	width: 620px;
+	float: right;
+	padding: 25px 0;
 }
 
+#main_content #photo{
+	width: 300px;
+	float: left;
+	overflow: hidden;
+	margin: 25px 0;
+}
+
+#main_content h1 {
+}
+
+#main_content h2 {
+	color: #c00;
+	font-size: 24px;
+	padding: 5px 25px;
+	letter-spacing: .05em;
+}
+#main_content h3 {
+	color: #ff6;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 0 25px;
+	font-weight: normal;
+	letter-spacing: .1em;
+}
+#main_content span {
+	color: #c00;
+}
 #main_content p {
 	line-height: 22px;
-	padding: 15px 50px;
-	font-size: 16px;
+	padding: 5px 50px 20px 50px;
+	font-size: 14px;
 }
+
+/*** menus ********************************************************/
 
 body.menus #main_content .item h3 {
 	display: inline;
@@ -267,28 +303,10 @@ body.menus div.item {
 	padding-left: 25px;
 }
 
-#main_content #photo{
-	width: 300px;
-	float: left;
-	overflow: hidden;
-	margin-top: 25px;
+body.events #main_content h3 {
+	text-align: right;
+	font-size: 14px;
 }
-
-body.menus #main_content div.menu,
-body.locations #main_content div.location,
-body.events #main_content div.single_event,
-body.news #main_content div.single_news,
-body.about_us #main_content div.single_about_us,
-body.store_hours #main_content div.store_hour {
-	background-color: #ffff99;
-	margin: 25px 0;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	width: 620px;
-	float: right;
-	padding: 25px 0;
-}
-
 
 /*** footer ********************************************************/
 
