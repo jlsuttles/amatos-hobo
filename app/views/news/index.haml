@@ -2,6 +2,8 @@
 - title "News", true
 
 #main_content
+  #photo
+    %img{ :src => '/images/portrait_inside_front_dining_room.jpg'}
   - @news.each do |news|
     %div.single_news
       %h2= news.name

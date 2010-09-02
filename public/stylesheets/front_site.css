@@ -250,28 +250,28 @@ body.front #events p {
 #main_content h2,
 #main_content h3 {
 	color: #000000;
-	padding: 25px 75px 10px 75px;
+	padding: 15px 25px;
 }
 
 #main_content p {
 	line-height: 22px;
-	padding: 5px 125px 35px 125px;
+	padding: 15px 50px;
 	font-size: 16px;
 }
 
 body.menus #main_content .item h3 {
 	display: inline;
 }
-body.menus ul {
-	list-style-type: none;
-}
-body.menus #menus {
-	width: 100%;
-}
-
 
 body.menus div.item {
 	padding-left: 25px;
+}
+
+#main_content #photo{
+	width: 300px;
+	float: left;
+	overflow: hidden;
+	margin-top: 25px;
 }
 
 body.menus #main_content div.menu,
@@ -284,6 +284,9 @@ body.store_hours #main_content div.store_hour {
 	margin: 25px 0;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	width: 620px;
+	float: right;
+	padding: 25px 0;
 }
 
 

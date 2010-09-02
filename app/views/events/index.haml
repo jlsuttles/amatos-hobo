@@ -2,6 +2,8 @@
 - title "Events", true
 
 #main_content
+  #photo
+    %img{ :src => '/images/portrait_inside_mid_dining_room.jpg'}
   - @events.each do |event|
     %div.single_event
       %h2= event.name

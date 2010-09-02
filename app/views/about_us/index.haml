@@ -2,6 +2,8 @@
 - title "About Us", true
 
 #main_content
+  #photo
+    %img{ :src => '/images/portrait_outside_dine_in.jpg'}
   - @about_us.each do |about_us|
     %div.single_about_us
       %h2= about_us.name
