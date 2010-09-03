@@ -8,7 +8,7 @@ class Menu < ActiveRecord::Base
     timestamps
   end
 
-  has_many :items, :order => 'created_at DESC'
+  has_many :items
   
   validates_presence_of :name
 

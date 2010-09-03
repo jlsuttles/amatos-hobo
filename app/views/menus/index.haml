@@ -6,9 +6,9 @@
     %ul
       - @menus.each_with_index do |menu, index|
         %li
-          %a{ :href => ('#menu_tab' + index.to_s) }
+          %a{ :href => ('#menu_tab' + index.to_s), :class => ['rounded_10', 'gradient'] }
             = menu.name
-    .one_third
+    .one_third.clear
       %img{ :src => '/images/portrait_funghi.jpg' }
     .two_thirds
       - @menus.each_with_index do |menu, index|
@@ -28,3 +28,4 @@
                   $
                   =item.large_price
               %p.clear= item.description
+              
