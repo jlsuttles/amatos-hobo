@@ -4,7 +4,8 @@
 #main_content.clear.centered
   .one_third
     %img{ :src => '/images/portrait_funghi.jpg' }
-    
+  
+  .two_thirds
     - @menus.each_with_index do |menu, index|
       %div{ :id => ('menu_tab' + index.to_s), :class => ['box', 'rounded_10', 'gradient']}
         %h2= menu.name
