@@ -21,5 +21,7 @@
 		$('#landscape').actAsSlideshow({ speed: 7000 });
 		$('#portrait').actAsSlideshow({ speed: 7000 });
 		});	
+	
+	$("#menu_tabs").tabs();
 
 })(jQuery);

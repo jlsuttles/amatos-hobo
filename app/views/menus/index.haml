@@ -4,9 +4,17 @@
 #main_content.clear.centered
   .one_third
     %img{ :src => '/images/portrait_funghi.jpg' }
-  .two_thirds
-    - @menus.each do |menu|
-      .box.rounded_10.gradient
+  
+  %div{ :id => 'menu_tabs', :class => 'two_thirds'}
+  
+    %ul
+      - @menus.each_with_index do |menu, index|
+        %li
+          %a{ :href => ('#menu_tab' + index.to_s)}
+            %span= menu.name
+    
+    - @menus.each_with_index do |menu, index|
+      %div{ :id => ('menu_tab' + index.to_s), :class => ['box', 'rounded_10', 'gradient']}
         %h2= menu.name
         %p= menu.description
         - menu.items.each do |item|
