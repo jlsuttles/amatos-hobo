@@ -200,7 +200,9 @@ body {
 }
 
 /*** front page main content ***************************************/
-
+#front #main_content .one_third {
+	margin: 0;
+}
 #front .about_us,
 #front .news {
   float:left;
@@ -214,7 +216,8 @@ body {
 }
 
 #front #main_content .box {
-  margin: 20px 10px;
+  margin: 15px 10px;
+	margin-top: 0;
 	padding: 10px;
 }
 
