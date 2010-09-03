@@ -27,5 +27,13 @@
                 -if item.large_price
                   $
                   =item.large_price
-              %p.clear= item.description
+              .clear
+              - if menu.name == 'Make Your Own Pizza' and item.description
+                %p
+                  %ul
+                    - item.description.split(';').sort.each do |piece|
+                      %li= piece
+              - else
+                %p= item.description
+                  
               

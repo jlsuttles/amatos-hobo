@@ -312,32 +312,33 @@ body.events #main_content h3 {
 	font-size: 14px;
 }
 
-#menus_tabs ul {
+#menus_tabs ul.ui-tabs-nav {
 	text-transform: uppercase;
 	color: #c00;
 	list-style-type: none;
 }
 
-#menus_tabs ul li {
+#menus_tabs ul.ui-tabs-nav li {
 	float: left;
-	width: 16.6%;
+	width: 12.5%;
 	text-align:center;
 	font-size: 14px;
+	line-height: 18px;
 	padding-top: 25px;
 }
-#menus_tabs ul li a {
+#menus_tabs ul.ui-tabs-nav li a {
 	display: block;
 	padding: 10px 10px;
-	min-height: 25px;
+	min-height: 36px;
 }
-#menus_tabs ul li a:link,
-#menus_tabs ul li a:visited {
+#menus_tabs ul.ui-tabs-nav li a:link,
+#menus_tabs ul.ui-tabs-nav li a:visited {
 	color: #ccc;
 	text-decoration: none;
 }
 
-#menus_tabs ul li a:hover,
-#menus_tabs ul li a:active {
+#menus_tabs ul.ui-tabs-nav li a:hover,
+#menus_tabs ul.ui-tabs-nav li a:active {
 	color: #c00;
 	text-decoration: none;
 }
@@ -347,6 +348,13 @@ body.events #main_content h3 {
 #menus_tabs .one_third div,
 #menus_tabs .two_thirds div {
 	margin-top: 0;
+}
+
+#menus_tabs div ul {
+	list-style-type: none;
+	padding: 0 50px;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 body.locations #main_content .two_thirds {
