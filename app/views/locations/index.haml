@@ -1,15 +1,18 @@
 - @active_tab = :locations
-- title "Locations", true
+- title "Locations", false
 
 #main_content.clear.centered
   .one_third
     %img{ :src => '/images/portrait_outside_corner.jpg'}
-  .two_thirds
+  .two_thirds.box.rounded_10.gradient
     - if @locations
       - @locations.each do |location|
-        .box.rounded_10.gradient
+        .one_third.box
           %h2= location.name
-          %p= location.address_line_1
-          %p= location.address_line_2
-          %p= location.phone_number
+          %h3= location.address_line_1
+          %h3= location.address_line_2
+          %h3= location.phone_number
           %p= location.directions
+          %p
+            %a{ :href => ('http://maps.google.com/maps?q=' + location.address_line_1 + location.address_line_2) }
+              Google Maps

@@ -257,7 +257,7 @@ body {
 }
 
 #main_content .one_third{
-	width: 300px;
+	width: 320px;
 	float: left;
 	overflow: hidden;
 	margin: 25px 0;
@@ -344,6 +344,45 @@ body.events #main_content h3 {
 #menus_tabs .one_third div,
 #menus_tabs .two_thirds div {
 	margin-top: 0;
+}
+
+body.locations #main_content .two_thirds {
+	margin-top: 25px;
+}
+body.locations #main_content .two_thirds .one_third {
+	margin-top: 0;
+	padding-top: 0;
+}
+body.locations #main_content p {
+	padding: 25px 25px;
+}
+body.locations #main_content h3 {
+	font-size: 14px;
+	line-height: 18px;
+	text-align: right;
+}
+
+a:link, a:visited {
+	color: #c00;
+}
+
+a:hover, a:active {
+	color: #ff6;
+	text-decoration: none;
+}
+
+body.store_hours #main_content h3 {
+	font-size: 14px;
+	line-height: 22px;
+	color: #ccc;
+	letter-spacing: .05;
+}
+body.store_hours #main_content .one_third {
+	text-align: center;
+}
+body.store_hours #main_content .box {
+	margin: 0 10px;
+	text-align: left;
 }
 
 /*** footer ********************************************************/
