@@ -20,8 +20,7 @@
 	$(function(){
 		$('#landscape').actAsSlideshow({ speed: 7000 });
 		$('#portrait').actAsSlideshow({ speed: 7000 });
+		$("#menus_tabs").tabs();
 		});	
-	
-	$("#menu_tabs").tabs();
 
 })(jQuery);

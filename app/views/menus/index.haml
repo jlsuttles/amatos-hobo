@@ -2,24 +2,29 @@
 - title "Menus", true
 
 #main_content.clear.centered
-  .one_third
-    %img{ :src => '/images/portrait_funghi.jpg' }
-  
-  .two_thirds
-    - @menus.each_with_index do |menu, index|
-      %div{ :id => ('menu_tab' + index.to_s), :class => ['box', 'rounded_10', 'gradient']}
-        %h2= menu.name
-        %p= menu.description
-        - menu.items.each do |item|
-          %div.item
-            %h3= item.name
-            %span
-              - if item.small_price
-                $
-                =item.small_price
-              - if item.small_price and item.large_price
-                \/
-              -if item.large_price
-                $
-                =item.large_price
-            %p.clear= item.description
+  #menus_tabs
+    %ul
+      - @menus.each_with_index do |menu, index|
+        %li
+          %a{ :href => ('#menu_tab' + index.to_s) }
+            = menu.name
+    .one_third
+      %img{ :src => '/images/portrait_funghi.jpg' }
+    .two_thirds
+      - @menus.each_with_index do |menu, index|
+        %div{ :id => ('menu_tab' + index.to_s), :class => ['box', 'rounded_10', 'gradient']}
+          %h2= menu.name
+          %p= menu.description
+          - menu.items(:order => "name ASC").each do |item|
+            %div.item
+              %h3= item.name
+              %span
+                - if item.small_price
+                  $
+                  =item.small_price
+                - if item.small_price and item.large_price
+                  \/
+                -if item.large_price
+                  $
+                  =item.large_price
+              %p.clear= item.description
