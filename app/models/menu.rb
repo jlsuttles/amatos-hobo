@@ -8,7 +8,7 @@ class Menu < ActiveRecord::Base
     timestamps
   end
 
-  has_many :items
+  has_many :items, :order => 'name ASC'
   
   validates_presence_of :name
 
