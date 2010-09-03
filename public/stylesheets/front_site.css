@@ -387,6 +387,7 @@ body.store_hours #main_content h3 {
 	line-height: 22px;
 	color: #ccc;
 	letter-spacing: .05;
+	text-align: right;
 }
 body.store_hours #main_content .one_third {
 	text-align: center;
