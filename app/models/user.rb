@@ -37,7 +37,7 @@ class User < ActiveRecord::Base
   # --- Permissions --- #
 
   def create_permitted?
-    false
+    true
   end
 
   def update_permitted?
