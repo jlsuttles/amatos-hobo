@@ -8,6 +8,6 @@
     - @events.each do |event|
       .box.rounded_10.gradient
         %h2= event.name
-        %h3= event.date_and_time.strftime("%A, %B %d, %Y")
-        %h3= event.date_and_time.strftime("%I:%M %p").downcase
+        %h3= event.date.strftime("%A, %B %d, %Y")
+        %h3= event.time.strftime("%I:%M %p")
         %p= event.description

@@ -4,12 +4,13 @@ class Event < ActiveRecord::Base
 
   fields do
     name          :string
-    date_and_time :datetime
+    date          :date
+    time          :time
     description   :text
     timestamps
   end
 
-  validates_presence_of :name, :date_and_time, :description
+  validates_presence_of :name, :date, :time, :description
 
   # --- Permissions --- #
 
