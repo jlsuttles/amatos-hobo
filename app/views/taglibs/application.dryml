@@ -1,5 +1,7 @@
 <!-- Global taglib - these tags are shared across all subsites -->
 
+<include src="paperclip" plugin="paperclip_with_hobo"/>
+
 <def tag="view" for="Dollars">
   <%= number_to_currency(this) %>
 </def>
