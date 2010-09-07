@@ -4,11 +4,11 @@ class FrontController < ApplicationController
 
   def index
     @about_us = AboutUs.all
-    @events = Event.all(:order => 'date DESC, time DESC')
-    @locations = Location.all
+    @events = Event.all(:limit => 3, :order => 'date DESC, time DESC')
+    @locations = Location.all(:limit => 2)
+    @store_hours = StoreHours.all(:limit => 5)
     @menus = Menu.all
-    @news = News.all(:order => 'created_at DESC')
-    @store_hours = StoreHours.all
+    @news = News.all(:limit => 3, :order => 'created_at DESC')
   end
 
   def summary
