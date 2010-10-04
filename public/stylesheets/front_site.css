@@ -10,14 +10,14 @@
   background: #333;
   background: -moz-linear-gradient(top, #333, transparent);
   background: -webkit-gradient(linear, left top, left bottom, from(#333), to(transparent));
-  filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#333', EndColorStr='transparent', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#333333', EndColorStr='#000000', GradientType=0);
   }
 
 .gradient_black{
   background: #333;
   background: -moz-linear-gradient(top, #333, #000);
   background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#000));
-  filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#333', EndColorStr='#000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#333333', EndColorStr='#000000', GradientType=0);
   }
 
 .rounded_10{

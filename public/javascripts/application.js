@@ -17,7 +17,7 @@
 
   $.fn.actAsSlideshow.defaults = { speed: 3500 };
 	
-	$(function(){
+	$(document).ready(function(){
 		$('#landscape').actAsSlideshow({ speed: 7000 });
 		$('#portrait').actAsSlideshow({ speed: 7000 });
 		$("#menus_tabs").tabs();
