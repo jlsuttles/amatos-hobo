@@ -1,6 +1,6 @@
 development:
   adapter: mysql
-  database: amatos_dev_2
+  database: amatos_dev
   username: root
   password: password
   socket: /tmp/mysql.sock  
