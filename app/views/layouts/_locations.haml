@@ -1,9 +1,8 @@
 - if @locations
   - @locations.each do |location|
-    .one_third
+    .one_fourth
       %a{ :href => '/locations'}
         %h2= location.name
         %p= location.address_line_1
         %p= location.address_line_2
         %p= location.phone_number
-  
