@@ -8,10 +8,7 @@
   #main_content.clear.centered
     .about_us.one_third
       = render :partial => 'about_us'
-  
+      = render :partial => 'events' 
+
     .secondary_content.two_thirds
-      .news.one_third
-        = render :partial => 'news'
-    
-      .events.one_third
-        = render :partial => 'events'
+      = render :partial => 'news'

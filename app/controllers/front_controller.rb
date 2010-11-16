@@ -3,12 +3,12 @@ class FrontController < ApplicationController
   hobo_controller
 
   def index
-    @about_us = AboutUs.all
+    @about_us = AboutUs.all(:limit => 1)
     @events = Event.all(:limit => 3, :order => 'date DESC, time DESC')
     @locations = Location.all(:limit => 2)
     @store_hours = StoreHours.all(:limit => 5)
     @menus = Menu.all
-    @news = News.all(:limit => 3, :order => 'created_at DESC')
+    @news = News.all(:limit => 5, :order => 'created_at DESC')
   end
 
   def summary

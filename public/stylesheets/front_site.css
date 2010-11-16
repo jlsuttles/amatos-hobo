@@ -29,10 +29,17 @@
 	width: 960px;
 	margin: 0 auto;
 }
+
+.one_fifth {
+  width: 160px;
+  margin: 15px 0;
+}
+
 .one_fourth {
 	width: 240px;
 	margin: 15px 0;
 }
+
 .one_third {
 	width: 320px;
 	margin: 15px 0;
@@ -81,19 +88,25 @@ body {
 	left: 0;
 }
 
-#header .one_fourth {
-	float: left;
-	text-align: right;
-	text-transform: uppercase;
+#header .one_fifth img {
+  position: relative;
+  margin: 0 0 2px 25px;
 }
 
-#header .one_fourth .center_text a {
-	display: block;
-	margin: 20px 50px;
-	text-indent:-9999px;
-	width: 150px;
-	height: 40px;
-	background: url('/images/button_order_online.png');
+#header .one_fifth {
+	float: right;
+	text-align: center;
+	text-transform: uppercase;
+  width: 180px;
+}
+
+#header .one_fifth .center_text {
+	margin: 0 0 0 20px;
+  font-weight: bold;
+}
+
+#header .one_fifth .center_text p {
+  margin: 7px 0;
 }
 
 #header h2 {
@@ -103,10 +116,18 @@ body {
 	margin-right: 10px;
 }
 
+#header .one_fifth .center_text a.replace h2 {
+	display: block;
+  margin: 0;
+	text-indent:-9999px;
+	width: 150px;
+	height: 40px;
+	background: url('/images/button_order_online.png');
+}
+
 #header p {
 	font-size: 12px;
 	line-height: 18px;
-	margin-right: 10px;
 }
 
 #header a:link,
@@ -232,7 +253,7 @@ body {
 }
 
 #front #main_content .box {
-  margin: 15px 10px;
+  margin: 30px 10px;
 	margin-top: 0;
 	padding: 10px;
 }
@@ -314,6 +335,14 @@ body {
 }
 
 /*** menus ********************************************************/
+
+body.menus #menus_tabs div.two_thirds p a {
+  float: right
+}
+
+body.menus #menus_tabs div.two_thirds h2 {
+  clear: both;
+}
 
 body.menus #main_content .item h3 {
 	display: inline;

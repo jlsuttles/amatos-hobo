@@ -13,6 +13,7 @@
     .two_thirds
       - @menus.each_with_index do |menu, index|
         %div{ :id => ('menu_tab' + index.to_s), :class => ['box', 'rounded_10', 'gradient']}
+          %p= link_to "Download Menu", "/images/amatos_menu.pdf"
           %h2= menu.name
           %p= menu.description
           - menu.items(:order => "name ASC").each do |item|

@@ -1,6 +1,6 @@
 - if @locations
-  - @locations.each do |location|
-    .one_fourth
+  - @locations.each_with_index do |location, index|
+    .one_fifth
       %a{ :href => '/locations'}
         %h2= location.name
         %p= location.address_line_1
