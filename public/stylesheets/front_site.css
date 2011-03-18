@@ -236,6 +236,10 @@ body {
   text-decoration: none;
 }
 
+iframe {
+  padding-left: 25px;
+}
+
 /*** front page main content ***************************************/
 #front #main_content .one_third {
 	margin: 0;
