@@ -1,6 +1,6 @@
 !!! Strict
 %html{html_attrs}
-  
+
   %head
     %title
       Amatos Woodfired Pizza -
@@ -10,22 +10,23 @@
     = javascript_include_tag 'jquery-ui-1.8.4.custom.min'
     = javascript_include_tag 'application'
     = javascript_include_tag 'http://use.typekit.com/qlu1yzx.js'
-  
+    = javascript_include_tag 'chownow'
+
   %body{:class => body_classes}
-  
+
     #container
-      
+
       #header.centered
         %a{ :href => '/'}
           %img{ :src => '/images/logo_small_125.png', :alt => 'Amato\'s Logo'}
-        = render :partial => '/layouts/order_online'      
+        = render :partial => '/layouts/order_online'
         = render :partial => '/layouts/store_hours'
         = render :partial => '/layouts/locations'
         = render :partial => '/layouts/badges'
       #navigation.gradient_black
         = render :partial => '/layouts/navigation'
-      
+
       = yield
-      
+
       #footer.clear
         = render :partial => '/layouts/footer'
